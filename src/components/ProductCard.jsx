@@ -3,7 +3,7 @@ import { toKebabCase } from "../helpers/stringHelper";
 
 const ProductCard = ({ product }) => {
     return (
-        <Link data-testid={⁠ product-${toKebabCase(product.name)} ⁠}>
+        <Link data-testid={`product-${toKebabCase(product.name)}`}>
             <div className="font-raleway p-4 rounded flex flex-col gap-3 group hover:shadow-lg transition duration-300 ease-in-out">
                 {/* product image  */}
                 <div className="h-80 w-full relative rounded">
